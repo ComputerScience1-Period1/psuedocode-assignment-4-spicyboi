@@ -5,8 +5,14 @@ Go Fish works using a simple deck of 52 cards. Each player has a hand, usually o
 
 
 Pseudo Code
+//create 54 cards with 4 suits
 * Create deck
 * Set two players
+//if you want you can cin>> names for instance
+p1 = ""
+p2 = ""
+cin>> p1
+cin>> p2
 * Distribute 5 cards from deck to both players
 * On game start:
 	*Set turn to player 1
@@ -15,6 +21,7 @@ Pseudo Code
                         *When player 2’s turn ends, set turn to player 1
   * On player 1’s turn:
       * Player 1 asks “Player 2, do you have any…”
+      cout << "do you have any:" << cin >> number >>
       * Insert the value of a card after that //Example: An ace, 10s, 4s…      
   * If Player 2 lacks the requested card(s):
       * Player 2 says “Go Fish”
