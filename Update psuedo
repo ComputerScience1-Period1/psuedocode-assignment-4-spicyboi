@@ -1,0 +1,45 @@
+Pseudo Code
+On how to play Go Fish
+Rules
+Go Fish works using a simple deck of 52 cards. Each player has a hand, usually of five or seven cards. Each player takes turns, each turn asking if another player has a card or cards with a certain face value. If not, the asking player has to take another card. If the other player has the requested card, they must give all cards of that face value to the other player. If you have all four cards of a certain value, you may lay them down in a stack, face-up, which is called a book. Once all card values have been turned into books, the player with the most books wins.
+
+
+Pseudo Code
+* Create deck
+* Set two players
+* Distribute 5 cards from deck to both players
+* On game start:
+	*Set turn to player 1
+
+* Constantly Check for:
+* If any player holds 4 of the same card:
+   * All matching card values are removed, and a book of that card’s value    is created
+* If all books have been created:
+   * Check for the Player with the most books 
+   * Whichever Player has more books wins
+
+* If any player has won the game, the game will end.
+
+ * On player 1’s turn:
+     * Player 1 asks “Player 2, do you have any…”
+     * Input the value of a card after that //Example: An ace, 10s, 4s…	* If Player 2 lacks the requested card(s):
+      		* Player 2 says “Go Fish”
+      		* Player 1 has to draw a card from the deck   
+      		* It is now player 2’s turn
+  	* Else if Player 2 has requested card(s):
+      		* Player 2 gives all requested card(s) to Player 1
+      		* Player 1 may ask again until their value is wrong
+		* It is still player 1’s turn
+     
+* On player 2’s turn:
+     * Player 2 asks “Player 1, do you have any…”
+     * Input the value of a card after that
+   	* If Player 2 lacks the requested card(s):
+      		* Player 1 says “Go Fish”
+      		* Player 2 has to draw a card from the deck
+     		* It is now player 1’s turn
+   	* If Player 2 has requested card(s):
+      		* Player 1 gives all requested card(s) to Player 1
+      		* Player 2 may ask again until their value is wrong
+		* It is still player 2’s turn
+
