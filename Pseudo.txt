@@ -2,8 +2,7 @@
 On how to play Go Fish
 Rules
 Go Fish works using a simple deck of 52 cards. Each player has a hand, usually of five or seven cards. Each player takes turns, each turn asking if another player has a card or cards with a certain face value. If not, the asking player has to take another card. If the other player has the requested card, they must give all cards of that face value to the other player. If you have all four cards of a certain value, you may lay them down in a stack, face-up, which is called a book. Once all card values have been turned into books, the player with the most books wins.
-
-
+BTW this cant actually work as two players needs to be an AI vs Player.
 Pseudo Code
 * Create deck
 * Set two players
@@ -22,7 +21,22 @@ Pseudo Code
       * End player 1’s turn
   * Else if Player 2 has requested card(s):
       * Player 2 gives all requested card(s) to Player 1
-      * Player 1 may ask again //This means player 1 can ask over and over until you have to Go Fish!     
+      * Player 1 may ask again //This means player 1 can ask over and over until you have to Go Fish!
+      boolean has=false;
+      boolean P1Turn=false
+      while(running){
+     	 P1Turn=true;
+     		 while(P1Turn){
+      		if(has==false){
+      		(probably have to create a draw function separately)
+      		P1Turn=false;
+      }
+     		 else if(has==true){
+		 
+     		 }
+      }
+      
+      
 * On player 2’s turn:
    * Player 2 asks “Player 1, do you have any…”
       * Insert the value of a card after that
