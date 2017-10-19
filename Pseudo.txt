@@ -9,7 +9,7 @@ Pseudo Code
 * Set two players
 * Distribute 5 cards from deck to both players
 * On game start:
-	*Set turn to player 1
+	*Set turn to player 1 // this is good, you're cognitive of how you need to start 
 	*Loop until end of game:
 		*When player 1’s turn ends, set turn to player 2
                         *When player 2’s turn ends, set turn to player 1
@@ -30,12 +30,12 @@ Pseudo Code
       * Player 1 says “Go Fish”
       * Player 2 has to draw a card from the deck
       * End player 2’s turn
-   * If Player 2 has requested card(s):
+   * else If Player 2 has requested card(s): // use else-if to save resources 
       * Player 1 gives all requested card(s) to Player 1
       * Player 2 may ask again
 * If any player holds 4 of the same card:
-   * That card is put down as a book, and that card value is essentially removed from the game
-* If all books have been created:
+   * That card is put down as a book, and that card value is essentially removed from the game // make sure to keep track of how many books have been created
+* If all books have been created: // make sure to define "all" as a value or calculate it 
    * The player with the most cards wins
 * Game ends
 
