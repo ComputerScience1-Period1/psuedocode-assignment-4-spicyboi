@@ -1,8 +1,13 @@
 ﻿Pseudo Code
 On how to play Go Fish
-Rules
-Go Fish works using a simple deck of 52 cards. Each player has a hand, usually of five or seven cards. Each player takes turns, each turn asking if another player has a card or cards with a certain face value. If not, the asking player has to take another card. If the other player has the requested card, they must give all cards of that face value to the other player. If you have all four cards of a certain value, you may lay them down in a stack, face-up, which is called a book. Once all card values have been turned into books, the player with the most books wins.
-
+Rules:
+Go Fish works using a simple deck of 52 cards.
+Each player has a hand, usually of five or seven cards.
+Each player takes turns, each turn asking if another player has a card or cards with a certain face value.
+If not, the asking player has to take another card.
+If the other player has the requested card, they must give all cards of that face value to the other player.
+If you have all four cards of a certain value, you may lay them down in a stack, face-up, which is called a book.
+Once all card values have been turned into books, the player with the most books wins.
 
 Pseudo Code
 * Create deck
@@ -20,7 +25,7 @@ Pseudo Code
       * Player 2 says “Go Fish”
       * Player 1 has to draw a card from the deck   
       * End player 1’s turn
-  * Else if Player 2 has requested card(s):
+  * Else
       * Player 2 gives all requested card(s) to Player 1
       * Player 1 may ask again //This means player 1 can ask over and over until you have to Go Fish!     
 * On player 2’s turn:
@@ -30,7 +35,7 @@ Pseudo Code
       * Player 1 says “Go Fish”
       * Player 2 has to draw a card from the deck
       * End player 2’s turn
-   * If Player 2 has requested card(s):
+   * Else
       * Player 1 gives all requested card(s) to Player 1
       * Player 2 may ask again
 * If any player holds 4 of the same card:
